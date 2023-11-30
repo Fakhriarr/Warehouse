@@ -1,0 +1,55 @@
+.background {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: -1;
+    overflow: hidden;
+}
+
+.container-xxl {
+    color: aliceblue;
+    z-index: 1;
+}
+
+.blockquote-footer {
+    color: aliceblue;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    overflow: hidden;
+}
+
+video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.card {
+    padding: 20px;
+    background-color: rgba(0,0,0,1);
+    border-radius: 20px;
+    backdrop-filter: blur(10px);
+    transition: background 1s ease, backdrop-filter 1s ease, transform 0.5s ease;
+    will-change: backdrop-filter, transform;
+    border: 0.1px solid #4f4f4f;
+}
+
+.card:hover {
+    background: rgba(255, 255, 255, 0.2);
+    background-color: rgba(0,0,0,1);
+    backdrop-filter: blur(20px);
+    transform: scale(1.15);
+    transition-delay: 0s;
+}
